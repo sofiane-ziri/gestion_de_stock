@@ -36,7 +36,7 @@ def ajouter_produit():
     quantite = quantite_entry.get()
     id_categorie = id_categorie_entry.get()
 
-    sql = "INSERT INTO produit (nom, description, prix, quantite, id_categorie) VALUES (%s, %s, %s, %s, %s)"
+    sql = "INSERT INTO produit (nom, description, prix, quantite, id_categorie) VALUES (%s, %s, %s, %s, %s )"
     val = (nom, description, prix, quantite, id_categorie)
     mycursor.execute(sql, val)
     mydb.commit()
